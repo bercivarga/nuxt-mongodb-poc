@@ -1,4 +1,4 @@
-const publicRoutes = ["/", "/signup"];
+const publicRoutes = ["/", "/signup", "/signup/success"];
 
 // Middleware that protects routes from unauthorized access
 // Very simple, but given the constraints of the project, it's enough

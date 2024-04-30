@@ -19,10 +19,15 @@ async function handleLogin() {
     version="login"
   >
     <template #email>
-      <SharedInput v-model="email" placeholder="Email Address" />
+      <SharedInput v-model="email" required placeholder="Email Address" />
     </template>
     <template #password>
-      <SharedInput v-model="password" placeholder="Password" type="password" />
+      <SharedInput
+        v-model="password"
+        required
+        placeholder="Password"
+        type="password"
+      />
     </template>
   </SharedAuthModal>
 </template>

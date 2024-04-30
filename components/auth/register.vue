@@ -5,7 +5,7 @@ async function handleRegister() {
   await register();
 
   if (status.value === "success") {
-    await navigateTo("/dashboard");
+    await navigateTo("/signup/success");
   }
 }
 </script>
@@ -19,13 +19,23 @@ async function handleRegister() {
     version="register"
   >
     <template #email>
-      <SharedInput v-model="email" placeholder="Email Address" />
+      <SharedInput v-model="email" required placeholder="Email Address" />
     </template>
     <template #fullName>
-      <SharedInput v-model="fullName" placeholder="Full Name" />
+      <SharedInput v-model="fullName" required placeholder="Full Name" />
     </template>
     <template #password>
-      <SharedInput v-model="password" placeholder="Password" type="password" />
+      <div>
+        <SharedInput
+          v-model="password"
+          required
+          placeholder="Password"
+          type="password"
+        />
+        <span class="text-gray-darker mt-1 block px-3 text-sm">
+          Minimum 8 characters
+        </span>
+      </div>
     </template>
   </SharedAuthModal>
 </template>
