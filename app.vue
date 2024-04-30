@@ -8,6 +8,6 @@ useSeoMeta({
 <template>
   <SeoHead />
   <div>
-    <h1>Hello world!</h1>
+    <h1 class="text-lg text-red-500">Hello world!</h1>
   </div>
 </template>
