@@ -23,7 +23,7 @@ async function handleRegister() {
         v-model="email"
         type="email"
         required
-        placeholder="Email Address"
+        placeholder="Email Address*"
       />
     </template>
     <template #fullName>
@@ -31,7 +31,7 @@ async function handleRegister() {
         v-model="fullName"
         type="text"
         required
-        placeholder="Full Name"
+        placeholder="Full Name*"
       />
     </template>
     <template #password>
