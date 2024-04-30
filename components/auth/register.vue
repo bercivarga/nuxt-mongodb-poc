@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { email, password, status, register } = useRegister();
+const { email, fullName, password, status, register } = useRegister();
 
 async function handleRegister() {
   await register();
@@ -22,7 +22,7 @@ async function handleRegister() {
       <SharedInput v-model="email" placeholder="Email Address" />
     </template>
     <template #fullName>
-      <SharedInput v-model="email" placeholder="Full Name" />
+      <SharedInput v-model="fullName" placeholder="Full Name" />
     </template>
     <template #password>
       <SharedInput v-model="password" placeholder="Password" type="password" />
