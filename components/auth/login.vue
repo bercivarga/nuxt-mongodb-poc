@@ -12,7 +12,7 @@ async function handleLogin() {
 
 <template>
   <SharedAuthModal
-    title="Log in to Create &trade;"
+    title="Log in to Create&trade;"
     :on-form-submit="handleLogin"
     submit-button-label="Log in"
     :submission-status="status"

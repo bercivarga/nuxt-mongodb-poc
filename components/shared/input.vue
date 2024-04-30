@@ -14,7 +14,7 @@ const updateValue = (event: Event) => {
   <input
     v-bind="$attrs"
     :value="modelValue"
-    class="w-full rounded-md border-[1px] border-gray p-4 text-base leading-4"
+    class="w-full rounded-md border-[1px] border-gray p-4 text-base leading-4 transition-colors hover:border-black"
     @input="updateValue"
   />
 </template>
