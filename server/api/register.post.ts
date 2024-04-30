@@ -2,7 +2,12 @@ import { User } from "~/server/models";
 import hashPassword from "~/utils/crypto/hashPassword";
 import signUserJWT from "~/utils/jwt/signUserJWT";
 
-export default defineEventHandler(async (event) => {
+export type RegisterApiResult = {
+  token?: string;
+  message?: string;
+};
+
+export default defineEventHandler(async (event): Promise<RegisterApiResult> => {
   const { fullName, email, password } = await readBody(event);
 
   try {
@@ -22,10 +27,7 @@ export default defineEventHandler(async (event) => {
   } catch (error) {
     setResponseStatus(event, 500);
     return {
-      statusCode: 500,
-      body: JSON.stringify({
-        message: "Failed to create user",
-      }),
+      message: "Failed to create user",
     };
   }
 });

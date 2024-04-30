@@ -2,7 +2,12 @@ import { User } from "~/server/models";
 import decryptPassword from "~/utils/crypto/decryptPassword";
 import signUserJWT from "~/utils/jwt/signUserJWT";
 
-export default defineEventHandler(async (event) => {
+export type LoginApiResult = {
+  token?: string;
+  message?: string;
+};
+
+export default defineEventHandler(async (event): Promise<LoginApiResult> => {
   const { email, password } = await readBody(event);
 
   const user = await User.findOne({ email });
@@ -11,7 +16,7 @@ export default defineEventHandler(async (event) => {
     setResponseStatus(event, 401);
 
     return {
-      body: JSON.stringify({ message: "Invalid credentials" }),
+      message: "Invalid credentials",
     };
   }
 
