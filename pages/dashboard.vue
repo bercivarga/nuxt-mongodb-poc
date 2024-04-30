@@ -10,6 +10,6 @@ useSeoMeta({
   <main
     class="container mx-auto flex h-full flex-1 place-content-center place-items-center"
   >
-    <p class="text-2xl">Sign up successful! Welcome to BYBORRE Create&trade;</p>
+    <p class="text-2xl">This is your dashboard</p>
   </main>
 </template>
