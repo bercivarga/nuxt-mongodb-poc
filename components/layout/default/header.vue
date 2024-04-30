@@ -1,6 +1,6 @@
 <template>
   <header class="border-b-2 border-black bg-white text-black">
-    <div class="container mx-auto py-4">
+    <div class="container py-4">
       <svg
         width="111"
         height="18"

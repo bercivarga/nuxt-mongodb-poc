@@ -27,7 +27,7 @@ onMounted(() => {
 
 <template>
   <main
-    class="container mx-auto flex h-full flex-1 flex-col place-content-center place-items-center"
+    class="container flex h-full flex-1 flex-col place-content-center place-items-center"
   >
     <p class="text-2xl">Sign up successful! Welcome to BYBORRE Create&trade;</p>
     <NuxtLink to="/dashboard" class="inline-block">

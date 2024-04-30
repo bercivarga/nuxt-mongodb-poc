@@ -28,6 +28,10 @@ export default {
         sans: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
         body: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
       },
+      container: {
+        center: true,
+        padding: "1rem",
+      },
     },
   },
   plugins: [],

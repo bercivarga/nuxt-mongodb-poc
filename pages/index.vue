@@ -8,7 +8,7 @@ useSeoMeta({
 
 <template>
   <main
-    class="container mx-auto flex h-full flex-1 place-content-center place-items-center"
+    class="container flex h-full flex-1 place-content-center place-items-center"
   >
     <AuthLogin />
   </main>
