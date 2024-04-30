@@ -12,6 +12,9 @@ export default {
       white: {
         DEFAULT: "#FFFFFF",
       },
+      red: {
+        DEFAULT: "#FF6961",
+      },
     },
     extend: {
       boxShadow: {

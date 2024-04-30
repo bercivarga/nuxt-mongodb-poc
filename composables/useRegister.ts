@@ -48,6 +48,7 @@ export default function useRegister() {
     email,
     password,
     status,
+    fullName,
     register,
   };
 }
