@@ -19,10 +19,20 @@ async function handleRegister() {
     version="register"
   >
     <template #email>
-      <SharedInput v-model="email" required placeholder="Email Address" />
+      <SharedInput
+        v-model="email"
+        type="email"
+        required
+        placeholder="Email Address"
+      />
     </template>
     <template #fullName>
-      <SharedInput v-model="fullName" required placeholder="Full Name" />
+      <SharedInput
+        v-model="fullName"
+        type="text"
+        required
+        placeholder="Full Name"
+      />
     </template>
     <template #password>
       <div>

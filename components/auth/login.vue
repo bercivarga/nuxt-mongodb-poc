@@ -19,7 +19,12 @@ async function handleLogin() {
     version="login"
   >
     <template #email>
-      <SharedInput v-model="email" required placeholder="Email Address" />
+      <SharedInput
+        v-model="email"
+        type="email"
+        required
+        placeholder="Email Address"
+      />
     </template>
     <template #password>
       <SharedInput

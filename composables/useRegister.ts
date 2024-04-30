@@ -8,7 +8,12 @@ const fullName = ref("");
 const status = ref<AuthStatus>("idle");
 
 async function register() {
-  if (!email.value || !password.value || !fullName.value) {
+  if (
+    !email.value ||
+    !password.value ||
+    !fullName.value ||
+    password.value.length < 8 // this could also be done with a client-side validation library but due to time constraints, I'm keeping it simple
+  ) {
     status.value = "error";
     return;
   }

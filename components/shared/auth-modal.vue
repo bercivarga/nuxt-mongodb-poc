@@ -33,7 +33,7 @@ defineProps<{
           <IconRightArrow class="h-6 w-6" />
         </SharedPrimaryButton>
         <p v-if="submissionStatus === 'error'" class="text-red">
-          Something went wrong. Please try again.
+          Something went wrong. Please check your details and try again.
         </p>
         <p>
           <span v-if="version === 'login'"> Don't have an account? </span>

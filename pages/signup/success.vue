@@ -29,7 +29,9 @@ onMounted(() => {
   <main
     class="container flex h-full flex-1 flex-col place-content-center place-items-center"
   >
-    <p class="text-2xl">Sign up successful! Welcome to BYBORRE Create&trade;</p>
+    <p class="text-center text-2xl">
+      Sign up successful! Welcome to BYBORRE Create&trade;
+    </p>
     <NuxtLink to="/dashboard" class="inline-block">
       <SharedPrimaryButton class="mt-4">
         <span>Get started</span>
