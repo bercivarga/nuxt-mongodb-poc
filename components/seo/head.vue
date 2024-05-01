@@ -1,6 +1,3 @@
-<!-- This is the only place where disabling eslint is needed. -->
-<!-- eslint-disable vue/html-self-closing -->
-
 <script setup lang="ts">
 useHead({
   link: [
