@@ -12,6 +12,8 @@ async function login() {
     return;
   }
 
+  status.value = "loading";
+
   try {
     const res = await $fetch<LoginApiResult>("/api/login", {
       method: "POST",

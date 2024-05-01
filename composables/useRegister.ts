@@ -8,15 +8,12 @@ const fullName = ref("");
 const status = ref<AuthStatus>("idle");
 
 async function register() {
-  if (
-    !email.value ||
-    !password.value ||
-    !fullName.value ||
-    password.value.length < 8 // this could also be done with a client-side validation library but due to time constraints, I'm keeping it simple
-  ) {
+  if (!email.value || !password.value || !fullName.value) {
     status.value = "error";
     return;
   }
+
+  status.value = "loading";
 
   try {
     const res = await $fetch<RegisterApiResult>("/api/register", {

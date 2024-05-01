@@ -43,7 +43,7 @@ async function handleRegister() {
           type="password"
         />
         <span class="text-gray-darker mt-1 block px-3 text-sm">
-          Minimum 8 characters
+          Minimum of 8 characters
         </span>
       </div>
     </template>

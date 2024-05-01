@@ -1,6 +1,9 @@
 <script setup lang="ts">
-defineProps<{
+// Destructuring props and attributes for more flexible usage
+
+const { skipValidation = false, modelValue } = defineProps<{
   modelValue: string;
+  skipValidation?: boolean;
 }>();
 
 const emits = defineEmits(["update:modelValue"]);
@@ -14,6 +17,32 @@ const attrs = useAttrs();
 type InputType = "text" | "number" | "email" | "password";
 
 const typeAttr = (attrs.type || "text") as InputType;
+
+// Validation
+
+// By default, allows all
+let validationPattern = ".*";
+
+if (!skipValidation) {
+  switch (typeAttr) {
+    case "text":
+      validationPattern = "^[a-zA-Z ]{1,255}$";
+      break;
+    case "number":
+      validationPattern = "^[0-9]*$";
+      break;
+    case "email":
+      validationPattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
+      break;
+    case "password":
+      validationPattern = ".{8,}";
+      break;
+    default:
+      break;
+  }
+}
+
+// Password visibility
 
 const inputType = ref<InputType>(typeAttr);
 
@@ -33,6 +62,8 @@ const togglePasswordVisibility = () => {
       v-bind="$attrs"
       :type="inputType"
       :value="modelValue"
+      :pattern="validationPattern"
+      autocomplete="on"
       class="w-full rounded-md border-[1px] border-gray p-4 text-base leading-4 transition-colors hover:border-black"
       @input="updateValue"
     />

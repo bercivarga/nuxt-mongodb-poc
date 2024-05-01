@@ -32,6 +32,7 @@ async function handleLogin() {
         required
         placeholder="Password"
         type="password"
+        :skip-validation="true"
       />
     </template>
   </SharedAuthModal>
