@@ -29,7 +29,7 @@ onMounted(() => {
   <main
     class="container flex h-full flex-1 flex-col place-content-center place-items-center"
   >
-    <p class="text-center text-2xl">
+    <p class="text-center text-3xl font-bold">
       Sign up successful! Welcome to BYBORRE Create&trade;
     </p>
     <NuxtLink to="/dashboard" class="inline-block">

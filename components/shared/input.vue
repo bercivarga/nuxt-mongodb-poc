@@ -64,7 +64,7 @@ const togglePasswordVisibility = () => {
       :value="modelValue"
       :pattern="validationPattern"
       autocomplete="on"
-      class="w-full rounded-md border-[1px] border-gray p-4 text-base leading-4 transition-colors hover:border-black"
+      class="w-full rounded-lg border-[1px] border-gray p-4 text-base leading-6 transition-colors hover:border-black"
       @input="updateValue"
     />
     <button

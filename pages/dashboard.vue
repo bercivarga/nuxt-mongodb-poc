@@ -13,7 +13,7 @@ const { logout } = useLogout();
     class="container flex h-full flex-1 flex-col place-content-center place-items-center"
   >
     <p class="text-2xl">This is your dashboard</p>
-    <p>(if your imagination is good enough)</p>
+    <p>(if your imagination is strong enough)</p>
     <SharedPrimaryButton class="mt-4" @click="logout">
       <span>Log out</span>
     </SharedPrimaryButton>

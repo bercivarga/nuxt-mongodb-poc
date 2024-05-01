@@ -7,6 +7,7 @@
         viewBox="0 0 111 18"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        aria-label="BYBORRE logo"
         v-bind="$attrs"
       >
         <path

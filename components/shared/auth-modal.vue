@@ -10,9 +10,9 @@ defineProps<{
 
 <template>
   <div
-    class="flex h-full w-full max-w-[421px] flex-col overflow-y-auto rounded-lg bg-white p-8 shadow-soft md:min-h-[600px]"
+    class="flex h-full w-full max-w-[421px] flex-col overflow-y-auto rounded-2xl bg-white p-8 shadow-soft md:min-h-[600px]"
   >
-    <h1 class="text-red-500 text-2xl font-semibold">
+    <h1 class="text-3xl">
       {{ title }}
     </h1>
     <form

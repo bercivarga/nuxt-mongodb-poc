@@ -12,7 +12,7 @@ async function handleRegister() {
 
 <template>
   <SharedAuthModal
-    title="Sign up to Create&trade;"
+    title="Sign up for Create&trade;"
     :on-form-submit="handleRegister"
     submit-button-label="Sign up"
     :submission-status="status"
