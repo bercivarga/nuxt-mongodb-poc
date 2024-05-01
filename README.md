@@ -8,6 +8,7 @@ This is an example project for a fullstack application written in the Nuxt.js me
 - Nuxt.js for server-side rendering (SSR) and API routes
 - MongoDB + `mongoose` for NoSQL database management
 - TypeScript for type-safe development
+- TailwindCSS for styling
 - JSON web tokens (JWT) for authorization
 - `bcrypt` for hashing and decoding passwords
 - ESlint and Prettier for code quality
