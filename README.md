@@ -12,7 +12,7 @@ This is an example project for a fullstack application written in the Nuxt.js me
 - `bcrypt` for hashing and decoding passwords
 - ESlint and Prettier for code quality
 - [Railway.app](https://railway.app) for database hosting
-- [Cloudflare Pages](https://pages.cloudflare.com/) for deployments
+- [Vercel](https://vercel.com) for deployments
 
 ## Setup
 
